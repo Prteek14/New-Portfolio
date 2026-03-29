@@ -33,7 +33,7 @@ function Navbar() {
           </a>
         </ul>
         <div className="w-0.5 h-10 bg-gray-500 sm:block hidden"></div>
-        <a href="" className="m-2 cursor-pointer bg-gray-300 rounded-2xl p-2 text-black hover:bg-gray-400">
+        <a href="Prteek_Gupta_Frontend_dev.pdf" className="m-2 cursor-pointer bg-gray-300 rounded-2xl p-2 text-black hover:bg-gray-400">
           Download Resume
         </a>
       </section>
