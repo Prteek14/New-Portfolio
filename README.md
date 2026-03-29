@@ -65,7 +65,8 @@ Portfolio/
 - Tailwind CSS
 - JavaScript
 
-## Demo Link
+## Demo Link 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=vercel)](https://prteek36.vercel.app/)
 
 
 ## Getting Started
