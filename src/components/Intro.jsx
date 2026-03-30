@@ -2,7 +2,7 @@ import NeuralCanvas from "./NeuralCanvas";
 
 function Intro() {
   return (
-    <section className="relative mt-28 p-2 text-center w-full flex flex-col items-center gap-2 font-mono overflow-hidden">
+    <section className="relative mt-23 p-2 text-center w-full flex flex-col items-center gap-2 font-mono overflow-hidden">
       {/* Background base */}
       <div className="absolute inset-0 -z-10 bg-[#020608]" />
 
