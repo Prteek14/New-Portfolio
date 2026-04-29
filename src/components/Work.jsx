@@ -4,6 +4,23 @@ import WorkCard from "./WorkCards/WorkCard";
 function Work() {
   const projectData = [
     {
+      title: "Campus Placement Website",
+      text: "A MERN-based Campus Placement Management System with JWT authentication, role-based access (Admin/Student), job lifecycle management, and real-time application tracking.",
+      image: "/signup.jpg",
+      points: [
+        "⚡ RESTful API Architecture",
+        "🔐 JWT-based Authorization",
+        "🌐 Role-Based Access Control (Admin / Student)",
+        "📦 Modular Backend Structure (MVC Pattern)",
+        "☁️ Cloudinary File Storage",
+        "🔄 Real-Time Status Updates (UI Sync)",
+        "📱 Responsive UI (Tailwind CSS)",
+        "⚡ Fast loading with optimized React components",
+        "📊 Interactive dashboards",
+      ],
+      link: "https://cpms-six.vercel.app/",
+    },
+    {
       title: "Metal Rate Calculator",
       text: "Modern React application providing realistic, city-wise metal price estimations for Gold, Silver, and Platinum. Includes API-based base rates, smart fluctuation logic, caching, and responsive UI.",
       image: "/Website_SS.avif",
