@@ -32,7 +32,7 @@ function Education() {
 
         {/* Card 3 */}
         <section className="flex-1 border border-gray-600 bg-slate-800 p-6 rounded-2xl  transition-all duration-300 hover:scale-105 hover:shadow-[10px_10px_8px_#374151]">
-          <h2 className="text-2xl font-semibold bg-linear-to-r from-[#92fe9d] to-[#00c9ff] bg-clip-text text-transparent">Graduation</h2>
+          <h2 className="text-2xl font-semibold bg-linear-to-r from-[#92fe9d] to-[#00c9ff] bg-clip-text text-transparent">Bachelor of Computer Applications</h2>
           <p>Invertis University, Bareilly, U.P.</p>
           <p>2023-2026</p>
           <p>77.56 % (Aggregate)</p>
