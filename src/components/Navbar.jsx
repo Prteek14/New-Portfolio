@@ -10,13 +10,22 @@ function Navbar() {
       />
       <section className="flex justify-center items-center">
         <ul className="sm:flex sm:justify-center sm:items-center sm:gap-2 sm:p-2 md:gap-4 cursor-pointer hidden group  ">
-          <a href="#about" className="transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110 hover:mx-4">
+          <a
+            href="#about"
+            className="transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110 hover:mx-4"
+          >
             <li>About</li>
           </a>
-          <a href="#skills" className="transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110 hover:mx-4">
+          <a
+            href="#skills"
+            className="transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110 hover:mx-4"
+          >
             <li>Skills</li>
           </a>
-          <a href="#work" className="transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110 hover:mx-4">
+          <a
+            href="#work"
+            className="transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110 hover:mx-4"
+          >
             <li>Work</li>
           </a>
           <a
@@ -33,7 +42,12 @@ function Navbar() {
           </a>
         </ul>
         <div className="w-0.5 h-10 bg-gray-500 sm:block hidden"></div>
-        <a href="Prteek_Gupta_Frontend_dev.pdf" className="m-2 cursor-pointer bg-gray-300 rounded-2xl p-2 text-black hover:bg-gray-400">
+        <a
+          href="https://drive.google.com/file/d/1B63et37br9VJG6KYy9tqRds6e3DgQZAe/view?usp=drive_link"
+          className="m-2 cursor-pointer bg-gray-300 rounded-2xl p-2 text-black hover:bg-gray-400"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Download Resume
         </a>
       </section>
