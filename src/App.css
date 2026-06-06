@@ -1,0 +1,32 @@
+/* ===== WebKit Browsers (Chrome, Edge, Safari) ===== */
+
+/* Scrollbar width/height */
+::-webkit-scrollbar {
+  width: 8px;        /* vertical scrollbar */
+  height: 8px;       /* horizontal scrollbar */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: #1e1e2e;
+  border-radius: 10px;
+}
+
+/* Thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #0974ff;
+  border-radius: 10px;
+  border: 2px solid #1e1e2e; /* track se thoda gap */
+}
+
+/* Thumb hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7d93ff;
+}
+
+
+/* ===== Firefox ===== */
+* {
+  scrollbar-width: thin;           /* auto | thin | none */
+  scrollbar-color: #005dd7 #1e1e2e; /* thumb track */
+}

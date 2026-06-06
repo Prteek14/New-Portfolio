@@ -2,7 +2,7 @@ import NeuralCanvas from "./NeuralCanvas";
 
 function Intro() {
   return (
-    <section className="relative mt-23 p-2 text-center w-full flex flex-col items-center gap-2 font-mono overflow-hidden">
+    <section className="relative p-2 text-center w-full flex flex-col items-center gap-2 font-mono overflow-hidden">
       {/* Background base */}
       <div className="absolute inset-0 -z-10 bg-[#020608]" />
 
@@ -44,19 +44,23 @@ function Intro() {
             {/* Text */}
             <p className="text-sm sm:text-base">Available to Work</p>
           </div>
-          <br />
+          
           <div className="flex gap-3 sm:gap-4 justify-center w-3/4">
             <a
-              href="#contact"
+              href="https://github.com/Prteek14"
               className="bg-[#2cddcb] p-4 rounded-2xl sm:text-lg text-gray-900 hover:shadow-[0_0_15px_(0,0,0,0.30)] shadow-cyan-300 transition duration-300"
+              target="_blank"
+              rel="noreferrer"
             >
-              Get in Touch
+              Visit GitHub
             </a>
             <a
-              href="#work"
+              href="https://www.linkedin.com/in/prteekgupta"
               className="bg-[#2cddcb] p-4 text-center rounded-2xl sm:text-lg text-gray-900 hover:shadow-[0_0_15px_(0,0,0,0.30)] shadow-cyan-300 transition duration-300"
+              target="_blank"
+              rel="noreferrer"
             >
-              View Projects
+              LinkedIn
             </a>
           </div>
         </section>

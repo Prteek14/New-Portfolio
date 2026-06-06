@@ -21,16 +21,48 @@ function Work() {
       link: "https://cpms-six.vercel.app/",
     },
     {
+      title: "JiraMini",
+      text: "A MERN-based Campus Placement Management System with JWT authentication, role-based access (Admin/Student), job lifecycle management, and real-time application tracking.",
+      image: "/JiraBoard.png",
+      points: [
+        "✅ Add new tasks with title, description, assignee, priority, and status.",
+        "📋 Display tasks in To Do, In Progress, and Done columns.",
+        "✏️ Edit existing tasks.",
+        "🗑️ Delete tasks.",
+        "🔼🔽 Reorder tasks within the same column using Up and Down buttons.",
+        "🎯 Filter tasks by priority.",
+        "👤 Filter tasks by assignee based on assignee names stored in localStorage.",
+        "🧹 Clear filters to restore the normal board view.",
+        "↩️ Undo the latest edit, delete, or reorder operation.",
+        "📱 Responsive layout built using Tailwind CSS.",
+      ],
+      link: "https://cpms-six.vercel.app/",
+    },
+    {
       title: "Metal Rate Calculator",
       text: "Modern React application providing realistic, city-wise metal price estimations for Gold, Silver, and Platinum. Includes API-based base rates, smart fluctuation logic, caching, and responsive UI.",
       image: "/Website_SS.avif",
       points: [
-        "⚡ Real-Time Price Simulation",
+        "Real-Time Price Simulation",
         "Shows live updated price",
         "Works even offline due to cached data",
         "100+ users used this ",
       ],
       link: "https://gspratecalc.netlify.app/",
+    },
+    {
+      title: "New Portfolio",
+      text: "This product is a portfolio website created to present a frontend developer's identity, skills, and projects in one place. It includes a hero introduction, an about section, a skills showcase, a work section for project highlights, and a contact area for direct communication and social links.",
+      image: "/image.avif",
+      points: [
+        "Responsive personal portfolio website",
+        "Interactive project showcase",
+        "Reusable component-based architecture",
+        "Section-based navigation",
+        "Social and contact integration",
+        "Animated hero experience",
+      ],
+      link: "https://prteek36.vercel.app/",
     },
     {
       title: "React Mini Apps",
@@ -54,20 +86,6 @@ function Work() {
         "Customizable: Easily replace images and change styles.",
       ],
       link: "https://memories-prteek.netlify.app/",
-    },
-    {
-      title: "New Portfolio",
-      text: "This product is a portfolio website created to present a frontend developer's identity, skills, and projects in one place. It includes a hero introduction, an about section, a skills showcase, a work section for project highlights, and a contact area for direct communication and social links.",
-      image: "/image.avif",
-      points: [
-        "Responsive personal portfolio website",
-        "Interactive project showcase",
-        "Reusable component-based architecture",
-        "Section-based navigation",
-        "Social and contact integration",
-        "Animated hero experience",
-      ],
-      link: "prteek",
     },
     {
       title: "Portfolio",
@@ -106,11 +124,8 @@ function Work() {
   ];
 
   return (
-    <section id="work" className="bg-slate-900 w-full py-16 px-6">
-      <h2 className="bg-gray-700 text-center w-fit mx-auto px-4 py-1 rounded-xl text-sm">
-        Work
-      </h2>
-      <p className="text-center mt-4 text-xl text-gray-400">
+    <section id="work" className="bg-slate-900 w-full py-10 px-6">
+      <p className="text-center mb-10 text-xl font-semibold bg-linear-to-r from-[#f093fb] to-[#f5576c] bg-clip-text text-transparent">
         Some of the noteworthy projects I have built:
       </p>
       <div>
