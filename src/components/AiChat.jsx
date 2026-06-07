@@ -84,7 +84,7 @@ function AiChat() {
                   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
                   - Full Name: Prteek Gupta
                   - Role: Full Stack Developer (MERN Stack)
-                  - Education: BCA from Invertis University, Bareilly (Graduated 2026)
+                  - Education: BCA from Invertis University, Bareilly (Graduated June-2026)
                   - Location: Bareilly, Uttar Pradesh, India
                   - Open To: Frontend Developer / React Developer / Full Stack Developer roles
                     (On-site in North India or Remote/Hybrid)
