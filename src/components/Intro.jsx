@@ -44,11 +44,11 @@ function Intro() {
             {/* Text */}
             <p className="text-sm sm:text-base">Available to Work</p>
           </div>
-          
+
           <div className="flex gap-3 sm:gap-4 justify-center w-3/4">
             <a
               href="https://github.com/Prteek14"
-              className="bg-[#2cddcb] p-4 rounded-2xl sm:text-lg text-gray-900 hover:shadow-[0_0_15px_(0,0,0,0.30)] shadow-cyan-300 transition duration-300"
+              className="bg-linear-to-r from-[#2cddcb] to-sky-400 p-4 rounded-2xl sm:text-lg text-gray-900 hover:shadow-[0_0_15px_(0,0,0,0.30)] shadow-cyan-300 transition duration-300"
               target="_blank"
               rel="noreferrer"
             >
@@ -56,7 +56,7 @@ function Intro() {
             </a>
             <a
               href="https://www.linkedin.com/in/prteekgupta"
-              className="bg-[#2cddcb] p-4 text-center rounded-2xl sm:text-lg text-gray-900 hover:shadow-[0_0_15px_(0,0,0,0.30)] shadow-cyan-300 transition duration-300"
+              className="bg-linear-to-r from-[#2cddcb] to-sky-400 p-4 text-center rounded-2xl sm:text-lg text-gray-900 hover:shadow-[0_0_15px_(0,0,0,0.30)] shadow-cyan-300 transition duration-300"
               target="_blank"
               rel="noreferrer"
             >
