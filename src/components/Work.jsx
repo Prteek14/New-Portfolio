@@ -22,7 +22,7 @@ function Work() {
     },
     {
       title: "JiraMini",
-      text: "A MERN-based Campus Placement Management System with JWT authentication, role-based access (Admin/Student), job lifecycle management, and real-time application tracking.",
+      text: "Built a Jira-inspired task board with CRUD, priority filtering, assignee management, and undo - synced across components via a custom browser event system, fully persisted with localStorage and no backend dependency.",
       image: "/JiraBoard.png",
       points: [
         "✅ Add new tasks with title, description, assignee, priority, and status.",
@@ -36,7 +36,7 @@ function Work() {
         "↩️ Undo the latest edit, delete, or reorder operation.",
         "📱 Responsive layout built using Tailwind CSS.",
       ],
-      link: "https://cpms-six.vercel.app/",
+      link: "https://jira-board-tau.vercel.app/",
     },
     {
       title: "Metal Rate Calculator",
