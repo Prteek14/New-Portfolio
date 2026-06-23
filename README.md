@@ -66,7 +66,7 @@ Portfolio/
 - JavaScript
 
 ## Demo Link 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=vercel)](https://prteek36.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=vercel)](https://prteek.vercel.app/)
 
 
 ## Getting Started
