@@ -1,6 +1,21 @@
+import { createElement } from "react";
 import NeuralCanvas from "./NeuralCanvas";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 function Intro() {
+  const socialLinks = [
+    {
+      icon: FiGithub,
+      href: "https://github.com/Prteek14",
+      label: "GitHub",
+    },
+    {
+      icon: FiLinkedin,
+      href: "https://www.linkedin.com/in/prteekgupta",
+      label: "LinkedIn",
+    },
+  ];
+
   return (
     <section className="relative p-2 text-center w-full flex flex-col items-center gap-2 font-mono overflow-hidden">
       {/* Background base */}
@@ -46,22 +61,18 @@ function Intro() {
           </div>
 
           <div className="flex gap-3 sm:gap-4 justify-center w-3/4">
-            <a
-              href="https://github.com/Prteek14"
-              className="bg-linear-to-r from-[#2cddcb] to-sky-400 p-4 rounded-2xl sm:text-lg text-gray-900 hover:shadow-[0_0_15px_(0,0,0,0.30)] shadow-cyan-300 transition duration-300"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Visit GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/prteekgupta"
-              className="bg-linear-to-r from-[#2cddcb] to-sky-400 p-4 text-center rounded-2xl sm:text-lg text-gray-900 hover:shadow-[0_0_15px_(0,0,0,0.30)] shadow-cyan-300 transition duration-300"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
+            {socialLinks.map(({ icon, href, label }) => (
+              <a
+                key={label}
+                href={href}
+                className="bg-linear-to-r from-[#2cddcb] to-sky-400 p-4 rounded-2xl sm:text-lg text-gray-900 hover:shadow-[0_0_15px_(0,0,0,0.30)] shadow-cyan-300 transition duration-300 flex items-center gap-2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {createElement(icon, { size: 18 })}
+                {label}
+              </a>
+            ))}
           </div>
         </section>
       </div>

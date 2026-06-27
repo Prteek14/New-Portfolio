@@ -1,134 +1,46 @@
-import { useState } from "react";
+import { createElement, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import emailjs from "@emailjs/browser";
+import {
+  FiGithub,
+  FiLinkedin,
+  FiMail,
+  FiMapPin,
+  FiPhone,
+  FiSend,
+} from "react-icons/fi";
 
 const socialLinks = [
-  { icon: "github", href: "https://github.com/Prteek14", label: "GitHub" },
   {
-    icon: "linkedin",
-    href: "https://linkedin.com/in/prateek-gupta",
+    icon: FiGithub,
+    href: "https://github.com/Prteek14",
+    label: "GitHub",
+  },
+  {
+    icon: FiLinkedin,
+    href: "https://linkedin.com/in/prteek-gupta",
     label: "LinkedIn",
   },
 ];
 
 const contactInfo = [
   {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="18"
-        height="18"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <rect width="20" height="16" x="2" y="4" rx="2" />
-        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-      </svg>
-    ),
+    icon: FiMail,
     label: "email",
     value: "prteekgupta36@gmail.com",
   },
   {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="18"
-        height="18"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.61 5.61l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-      </svg>
-    ),
+    icon: FiPhone,
     label: "phone",
     value: "+91 7398823474",
   },
   {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="18"
-        height="18"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-        <circle cx="12" cy="10" r="3" />
-      </svg>
-    ),
+    icon: FiMapPin,
     label: "location",
     value: "Bareilly, U.P., India",
   },
 ];
 
-const GitHubIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="17"
-    height="17"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-    <path d="M9 18c-4.51 2-5-2-7-2" />
-  </svg>
-);
-
-const LinkedInIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="17"
-    height="17"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    <rect width="4" height="12" x="2" y="9" />
-    <circle cx="4" cy="4" r="2" />
-  </svg>
-);
-
-const socialIcons = {
-  github: GitHubIcon,
-  linkedin: LinkedInIcon,
-};
-
-const SendIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="15"
-    height="15"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="m22 2-7 20-4-9-9-4Z" />
-    <path d="M22 2 11 13" />
-  </svg>
-);
 function Contact() {
   const [form, setForm] = useState({
     name: "",
@@ -199,7 +111,7 @@ function Contact() {
                 className="flex items-center gap-4 bg-[#111827] border border-[#1e293b] rounded-xl px-4 py-3 hover:border-cyan-500/30 transition-colors duration-200"
               >
                 <div className="w-9 h-9 rounded-lg bg-linear-to-br from-[#0e7490] to-[#6d28d9] flex items-center justify-center text-white shrink-0">
-                  {icon}
+                  {createElement(icon, { size: 18, strokeWidth: 1.8 })}
                 </div>
                 <div>
                   <p className="text-[11px] text-slate-500 uppercase tracking-widest">
@@ -213,21 +125,18 @@ function Contact() {
 
           {/* Social links */}
           <div className="flex gap-3 mt-1">
-            {socialLinks.map(({ icon, href, label }) => {
-              const Icon = socialIcons[icon];
-              return (
-                <a
-                  key={icon}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className="w-9 h-9 rounded-lg bg-[#1e293b] border border-[#334155] flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-all duration-200"
-                >
-                  <Icon />
-                </a>
-              );
-            })}
+            {socialLinks.map(({ icon, href, label }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="w-9 h-9 rounded-lg bg-[#1e293b] border border-[#334155] flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-all duration-200"
+              >
+                {createElement(icon, { size: 17, strokeWidth: 1.8 })}
+              </a>
+            ))}
           </div>
         </div>
 
@@ -322,7 +231,7 @@ function Contact() {
             type="submit"
             className="self-start flex items-center gap-2 bg-linear-to-r from-[#0ea5e9] to-[#8b5cf6] text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:opacity-90 active:scale-95 transition-all duration-150"
           >
-            <SendIcon />
+            <FiSend size={15} strokeWidth={2} />
             Send message
           </button>
         </form>
