@@ -50,7 +50,7 @@ function Navbar() {
           <div className="flex items-center gap-3">
             {/* Resume btn — desktop only */}
             <a
-              href="https://drive.google.com/file/d/1B63et37br9VJG6KYy9tqRds6e3DgQZAe/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1yLj6Y5xYc5KCRYRTYIHFPzoqRqhie3or/view?usp=drive_link"
               className="hidden md:block bg-gray-300 hover:bg-gray-400 text-black text-sm rounded-2xl px-3 py-1.5 transition-colors duration-200"
               target="_blank"
               rel="noopener noreferrer"
