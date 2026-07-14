@@ -78,7 +78,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className=" min-h-[85vh] relative overflow-hidden bg-[#090f1d]  p-8"
+      className=" min-h-[80vh] relative overflow-hidden bg-[#090f1d]  p-8"
     >
       <ToastContainer position="top-right" autoClose={3000} theme="dark" />
       {/* ── Glow balls ── */}
@@ -86,11 +86,11 @@ function Contact() {
       <div className="absolute -bottom-16 -right-16 w-44 h-44 rounded-full bg-violet-500/10 pointer-events-none" />
 
       {/* ── Content ── */}
-      <p className="text-center text-lg font-medium bg-linear-to-r from-[#4facfe] to-[#00f2fe]  bg-clip-text text-transparent mb-5 lg:mb-22">
+      <p className="text-center text-lg font-medium bg-linear-to-r from-[#4facfe] to-[#00f2fe]  bg-clip-text text-transparent mb-5 lg:mb-20">
         What’s next? Feel free to reach out if you're looking for a developer,
         have a question, or just want to connect.
       </p>
-      <div className="relative z-10 mx-auto flex flex-col lg:flex-row gap-8 sm:w-3/5 lg:w-4/5 lg:items-center lg:justify-center lg:scale-110">
+      <div className="relative z-10 mx-auto flex flex-col lg:flex-row gap-8 sm:w-3/5 lg:w-4/5 lg:items-start lg:justify-center lg:scale-110">
         {/* Left — Contact info */}
         <div className="flex flex-col gap-4 flex-1 ">
           <div>

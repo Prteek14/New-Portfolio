@@ -32,7 +32,7 @@ function Education() {
           <h2 className="text-2xl font-semibold bg-linear-to-r from-[#92fe9d] to-[#00c9ff] bg-clip-text text-transparent">Bachelor of Computer Applications</h2>
           <p>Invertis University, Bareilly, U.P.</p>
           <p>2023-2026</p>
-          <p>77.56 % (Aggregate)</p>
+          <p>79.07 %</p>
         </section>
       </div>
 

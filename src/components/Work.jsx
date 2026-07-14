@@ -88,30 +88,7 @@ function Work() {
       link: "https://memories-prteek.netlify.app/",
     },
     {
-      title: "Portfolio",
-      text: "A fully responsive personal portfolio website showcasing my skills, projects, and contact information. This project is built with HTML, CSS, and JavaScript and is designed to highlight my work as a creative and passionate web developer.",
-      image: "/portfolio.avif",
-      points: [
-        "Responsive Design – Works perfectly on desktops, tablets, and mobile devices.",
-        "Smooth Scrolling & Animations – Adds a modern and interactive feel.",
-        "Navigation Menu Toggle – For mobile-friendly navigation.",
-      ],
-      link: "https://prteek.netlify.app/",
-    },
-    {
-      title: "Background Color Picker",
-      image: "/bg-changer.avif",
-      text: "This is a simple web application that changes the background color of the page automatically every 2 seconds. It also displays the current HEX color code being applied. You can start and stop the color change process using the provided buttons.",
-      points: [
-        "Random HEX color generator.",
-        "Background color automatically updates every 2 seconds.",
-        "Displays the HEX code value of the current background.",
-        "Start and Stop buttons to control color changes.",
-      ],
-      link: "https://color-picker-prteek.netlify.app/",
-    },
-    {
-      title: "Authentication App",
+      title: "Authentication Page",
       image: "Auth_app.avif",
       text: "A full-stack authentication web application built with the MERN stack (MongoDB, Express, React, Node.js). It supports user registration, login, protected routes, and session management using localStorage.",
       points: [

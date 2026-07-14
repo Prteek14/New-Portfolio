@@ -17,7 +17,7 @@ function Intro() {
   ];
 
   return (
-    <section className="relative p-2 text-center w-full flex flex-col items-center gap-2 font-mono overflow-hidden">
+    <section id="home" className="relative p-2 text-center w-full flex flex-col items-center gap-2 font-mono overflow-hidden">
       {/* Background base */}
       <div className="absolute inset-0 -z-10 bg-[#020608]" />
 
@@ -27,7 +27,7 @@ function Intro() {
       {/* Your Content */}
       <div className="relative z-10">
         {/* 👇 Your existing intro code */}
-        <section className="mt-10 p-2 text-center w-full flex flex-col justify-center items-center gap-2 font-mono">
+        <section className="mt-10 p-2 text-center w-full flex flex-col justify-center items-center gap-2 font-mono min-h-screen">
           <img
             src="/New pic.avif"
             alt="my pic"
@@ -40,7 +40,7 @@ function Intro() {
             Prteek Gupta
           </h1>
           <h2 className=" text-gray-400">
-            Aspiring Frontend Developer | MERN Stack | AI & Web Technologies
+            Frontend Developer | MERN Stack | AI & Web Technologies
           </h2>
           <p className="text-wrap p-2 sm:w-2/4">
             Building scalable web applications with clean code and exploring AI
