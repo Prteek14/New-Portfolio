@@ -217,7 +217,7 @@ User question: ${query}`,
     ]);
   };
   return (
-    <div className="relative flex flex-col min-h-[85vh] bg-[#090f1d]">
+    <div className="relative flex flex-col min-h-screen bg-[#090f1d]">
       {/* Header */}
       <div className="flex flex-col items-center pt-10 pb-4 gap-2">
         <img

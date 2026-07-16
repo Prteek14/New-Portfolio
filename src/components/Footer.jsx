@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="flex flex-col sm:flex-row items-center justify-center gap-2 py-6 px-4 border-t border-white/10 text-sm text-gray-400 tracking-wide">
+    <footer className="flex flex-col sm:flex-row items-center justify-center gap-2  p-4 border-t border-white/10 text-sm text-gray-400 h-auto">
       <span>© 2026 · Designed & coded with</span>
       <span className="text-orange-500 animate-pulse">❤️</span>
       <span>
@@ -11,7 +11,6 @@ function Footer() {
           Prteek
         </span>
       </span>
-      
     </footer>
   );
 }

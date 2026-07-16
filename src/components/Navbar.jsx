@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const links = [
   { href: "home", label: "Home" },
@@ -75,6 +76,12 @@ function Navbar() {
           </ul>
 
           <div className="flex items-center gap-3">
+            <Link
+              to="/ai"
+              className="hidden md:block rounded-2xl border border-cyan-400 px-3 py-1.5 text-sm text-cyan-400 transition-colors hover:bg-cyan-400 hover:text-slate-950"
+            >
+              Ask AI
+            </Link>
             <a
               href="https://drive.google.com/file/d/1yLj6Y5xYc5KCRYRTYIHFPzoqRqhie3or/view?usp=drive_link"
               className="hidden md:block bg-gray-300 hover:bg-gray-400 text-black text-sm rounded-2xl px-3 py-1.5 transition-colors duration-200"
@@ -126,6 +133,13 @@ function Navbar() {
               </li>
             ))}
           </ul>
+          <Link
+            to="/ai"
+            className="block mx-3 mb-3 rounded-md border border-cyan-400 px-3 py-2 text-center text-sm text-cyan-400"
+            onClick={() => setMenuOpen(false)}
+          >
+            Ask AI
+          </Link>
             <a
             href="https://drive.google.com/file/d/1yLj6Y5xYc5KCRYRTYIHFPzoqRqhie3or/view?usp=drive_link"
             className="block mx-3 mb-3 text-center bg-gray-300 hover:bg-gray-400 text-black text-sm rounded-2xl px-3 py-2 transition-colors duration-200"
