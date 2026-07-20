@@ -217,7 +217,15 @@ User question: ${query}`,
     ]);
   };
   return (
-    <div className="relative flex flex-col min-h-screen bg-[#090f1d]">
+    <div
+      className="relative isolate flex min-h-screen flex-col overflow-hidden"
+      style={{
+        backgroundColor: "#070b16",
+        backgroundImage:
+          "radial-gradient(circle at 8% 8%, rgba(34, 211, 238, 0.18), transparent 30rem), radial-gradient(circle at 92% 42%, rgba(139, 92, 246, 0.17), transparent 28rem), radial-gradient(circle at 50% 110%, rgba(16, 185, 129, 0.1), transparent 26rem), linear-gradient(135deg, #070b16 0%, #0d1730 52%, #080b18 100%), radial-gradient(rgba(148, 163, 184, 0.12) 0.7px, transparent 0.7px)",
+        backgroundSize: "auto, auto, auto, auto, 18px 18px",
+      }}
+    >
       {/* Header */}
       <div className="flex flex-col items-center pt-10 pb-4 gap-2">
         <img
@@ -262,7 +270,7 @@ User question: ${query}`,
       </div>
 
       {/* Input */}
-      <div className="sticky bottom-0 pb-6 pt-2 bg-[#090f1d] px-2 md:p-4">
+      <div className="sticky bottom-0 bg-[#090f1d]/70 px-2 pb-6 pt-2 backdrop-blur-md md:p-4">
         <form
           onSubmit={sendMessage}
           className="flex mx-auto w-full md:w-3/5 gap-3 rounded-2xl border border-[#1e293b] bg-[#111827] p-2"
